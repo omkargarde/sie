@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ADMIN LOGIN</title>
+  </head>
+  <body class="bg-1">
+    <form  name="adminLoginDetails" action="adminLogin.php" method = "post">
+
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 ">
+            <br><br><br><br><br>
+            <div class="card ">
+              <h5 class="card-title d-flex justify-content-center">Admin login</h5>
+              <div class="card-body ">
+
+                <div class="form-group ">
+
+                  <label for="adminLoginId">Login ID</label>
+                  <input type="text" class="form-control" name="adminLoginId" id="adminLoginId" aria-describedby="emailHelp" placeholder="Enter faculty id" required/>
+                  <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                </div>
+
+                <div class="form-group">
+                  <label for="adminLoginPassword">Password</label>
+                  <input type="password" class="form-control" id="adminLoginPassword" name="adminLoginPassword" placeholder="Password" value="" required/>
+                </div>
+
+                <button type="submit" name="adminLogin" id="adminLogin" class="btn btn-info col-md-12">NEXT</button>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+      <!-- bootstrap js-->
+      <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>

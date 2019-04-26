@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>ADD NEW FACULTY</title>
+  </head>
+  <body class="bg-2" onload='document.form1.facultyName.focus()'>
+    
+    <form name="form1" class="" action="addNewFaculty.php" method="post">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-danger">Log Out</button>
+        </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6 ">
+          <br>
+            <div class="card ">
+              <div class="card-body ">
+                <div class="form-group ">
+                  <h5 class="card-title d-flex justify-content-center">Add New Faculty</h5>
+                  <div class="form-group">
+                    <label for="facultyName">Faculty Name</label>
+                    <input type="text" class="form-control" name="facultyName"pattern="^1RV[0-9]{2}[a-zA-Z]{2}[0-9]{3}" id="facultyName" placeholder="Enter the name" value="" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="facultyId">Faculty ID</label>
+                    <input type="text" class="form-control" name="facultyId" id="facultyId" value="" placeholder="Enter the faculty ID" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="facultyDOB">Faculty DOB</label>
+                    <input type="date" class="form-control" name="facultyDOB" id="facultyDOB" value="" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="facultyEmail">Faculty email</label>
+                    <input type="email" class="form-control" name="facultyEmail" id="facultyEmail" aria-describedby="emailHelp" value="" placeholder="Enter email" required/>
+                  </div>
+                  <div class="form-group">
+                    <label for="facultyPassword">Initial Password</label>
+                    <input type="password" class="form-control" name="facultyPassword" id="facultyPassword" value="" placeholder="Password" required/>
+                  </div>
+                  <button type="submit" name="facultyDetailsSubmit" class="btn btn-info col-md-12" value="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+
+    </form>
+    <!--=====================================================================-->
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
